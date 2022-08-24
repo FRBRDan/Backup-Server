@@ -57,3 +57,13 @@ All fields are positive (unsigned) and are represented in little endian byte ord
 ## The Algorithm
 
 The server receives a request and begins to parse it according to the fields above. Both the client and the server have to parse the data in the same way, according to the protocol above. If the payload exceeds the size of one packet, then it is sent through multiple packets using fragmentation. The algorithm also allows for simultaneous connections using threading. Data security was also considered at all times.
+
+## Example
+
+### Server side 
+![image](https://user-images.githubusercontent.com/72566563/186453021-eb279a0f-8cfe-444a-8ee4-e0eb05047d2e.png)
+
+
+### Client side
+![image](https://user-images.githubusercontent.com/72566563/186453115-886bc44e-0555-4559-814a-42f1f7481d47.png)
+
